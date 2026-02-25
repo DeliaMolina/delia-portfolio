@@ -411,9 +411,8 @@ body {
 }
 
 .icon-instagram {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    vertical-align: -3px;   /* para alinearlo con el texto */
     margin-right: 6px;
-    fill: currentColor;
 }

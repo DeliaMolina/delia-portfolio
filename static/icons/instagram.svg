@@ -1,3 +1,23 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M7 2C4.243 2 2 4.243 2 7V17C2 19.757 4.243 22 7 22H17C19.757 22 22 19.757 22 17V7C22 4.243 19.757 2 17 2H7ZM12 7C14.757 7 17 9.243 17 12C17 14.757 14.757 17 12 17C9.243 17 7 14.757 7 12C7 9.243 9.243 7 12 7ZM18.5 6C18.5 6.82843 17.8284 7.5 17 7.5C16.1716 7.5 15.5 6.82843 15.5 6C15.5 5.17157 16.1716 4.5 17 4.5C17.8284 4.5 18.5 5.17157 18.5 6Z" fill="currentColor"></path>
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <linearGradient id="igGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f58529"></stop>
+      <stop offset="30%" stop-color="#feda77"></stop>
+      <stop offset="50%" stop-color="#dd2a7b"></stop>
+      <stop offset="70%" stop-color="#8134af"></stop>
+      <stop offset="100%" stop-color="#515bd4"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo redondeado con degradado IG -->
+  <rect x="2" y="2" width="20" height="20" rx="5" fill="url(#igGradient)"></rect>
+
+  <!-- Cámara -->
+  <rect x="7" y="7" width="10" height="10" rx="3" fill="none" stroke="white" stroke-width="1.6"></rect>
+
+  <!-- Lente -->
+  <circle cx="12" cy="12" r="3" fill="none" stroke="white" stroke-width="1.6"></circle>
+
+  <!-- Punto flash -->
+  <circle cx="16" cy="8" r="1.1" fill="white"></circle>
 </svg>
