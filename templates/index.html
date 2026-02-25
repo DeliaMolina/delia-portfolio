@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}Inicio · Delia.dev{% endblock %}
+
+{% block content %}
+<section class="section">
+    <p class="terminal-label">delia@dev-edu:~$</p>
+    <h2 class="title">Hola, soy Delia.</h2>
+    <p class="subtitle">
+        Ingeniera Civil en Automatización (UBB), Profe de Matemática (USS) y obsesionada con
+        mezclar código, robótica y educación pública para que la tecnología
+        haga sentido en el aula.
+    </p>
+</section>
+
+<section class="section">
+    <h3 class="section-title">Experiencia</h3>
+    <div class="card">
+        <p>
+            Tengo más de 10 años de experiencia en educación, tecnología, gestión institucional 
+        y proyectos de innovación. He desarrollado labores en docencia, coordinación informática, 
+        soporte TI, acompañamiento pedagógico, robótica educativa, formulación de proyectos y 
+        gestión de recursos en diversos establecimientos y entidades públicas. 
+        Combino experiencia en el aula, conocimientos técnicos avanzados y liderazgo en procesos de 
+        transformación digital, integración de TIC y desarrollo de capacidades en comunidades educativas. 
+        Destaco por la gestión eficiente, la autonomía, el trabajo colaborativo y la orientación a la mejora continua.
+        </p>
+    </div>
+</section>
+        
+    <div class="grid-two">
+        <div class="card">
+            <h3>👩‍💻 Lado TI</h3>
+            <ul class="list">
+                <li>Desarrollo de soluciones TI para escuelas y sostenedores.</li>
+                <li>Gestión de plataformas (Google Workspace, Eduplan, SMC, etc.).</li>
+                <li>Prototipado con Arduino, LEGO, impresión 3D y automatización.</li>
+                <li>Documentación técnica, manuales y procesos TI.</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>📚 Lado profe</h3>
+            <ul class="list">
+                <li>Docencia en matemática en EPJA y educación regular.</li>
+                <li>Talleres de robótica educativa (Scratch, EV3, Spike, Arduino).</li>
+                <li>Acompañamiento pedagógico y trabajo colaborativo en aula.</li>
+                <li>Diseño de proyectos innovadores para el PME y fondos Mineduc.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cta-row">
+        <a href="{{ url_for('cv') }}" class="btn btn-primary">Ver CV completo</a>
+        <a href="{{ url_for('proyectos') }}" class="btn btn-ghost">Proyectos educativos</a>
+    </div>
+</section>
+
+<section class="section">
+    <br>
+    <h3 class="section-title">Lo que me mueve</h3>
+    <div class="card">
+        <p>
+            Creo en una educación donde la tecnología no sea “un agregado”, sino
+            parte del diseño pedagógico: desde la planificación, hasta el aula
+            y la gestión institucional. Me gusta pensar el colegio como un
+            laboratorio vivo, donde se puede prototipar, medir, mejorar y volver
+            a intentar.
+        </p>
+    </div>
+</section>
+{% endblock %}

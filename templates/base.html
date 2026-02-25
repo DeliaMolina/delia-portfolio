@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Delia.dev{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Fuente tipo dev -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="no-select">
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="avatar">
+                    <span>D</span>
+                </div>
+                <div class="brand-text">
+                    <h1>Delia Molina</h1>
+                    <p class="brand-subtitle">Autómata & Profe de Matemática</p>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <a href="{{ url_for('home') }}" class="nav-link">~/inicio</a>
+                <a href="{{ url_for('cv') }}" class="nav-link">~/cv</a>
+                <a href="{{ url_for('proyectos') }}" class="nav-link">~/proyectos_educativos</a>
+            </nav>
+
+            <div class="tags">
+                <span class="tag">Robótica</span>
+                <span class="tag">Flask</span>
+                <span class="tag">Robótica</span>
+                <span class="tag">Educación de Calidad</span>
+                <span class="tag">Transformación Digital</span>
+            </div>
+
+            <div class="contact">
+                <h2>Contacto</h2>
+                <p>📧 <a href="mailto:deliamolina@gmail.com">deliamolina@gmail.com</a></p>
+                <p>📱 +56 9 9256 4509</p>
+                <p>📍 Concepción, Chile</p>
+            </div>
+        </aside>
+
+        <main class="main">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
